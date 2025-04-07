@@ -214,6 +214,12 @@ class CAR(Platforms):
     flags=SubaruFlags.LKAS_ANGLE,
   )
 
+  SUBARU_BRZ_2025 = SubaruGen2PlatformConfig(
+    [SubaruCarDocs("Subaru BRZ 2025", "All", car_parts=CarParts.common([CarHarness.subaru_b]))],
+    CarSpecs(mass=1270, wheelbase=2.57, steerRatio=13.5),
+    flags=SubaruFlags.LKAS_ANGLE,
+  )
+
 
 SUBARU_VERSION_REQUEST = bytes([uds.SERVICE_TYPE.READ_DATA_BY_IDENTIFIER]) + \
   p16(uds.DATA_IDENTIFIER_TYPE.APPLICATION_DATA_IDENTIFICATION)

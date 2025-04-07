@@ -41,13 +41,30 @@ FW_VERSIONS = {
       b'%\xc0\xd0\x11',
     ],
     (Ecu.fwdCamera, 0x787, None): [
-      b'\x05!\x08\x1dK\x05!\x08\x01/',
+      b'\x00\x00e\xb8\x00\x1f@ 4\x00',
     ],
     (Ecu.engine, 0x7a2, None): [
       b'\xe5,\xa0P\x07',
     ],
     (Ecu.transmission, 0x7a3, None): [
       b'\x04\xfe\xf3\x00\x00',
+    ],
+  },
+  CAR.SUBARU_BRZ_2025: {
+    (Ecu.abs, 0x7b0, None): [
+      b'\xa5 #\x04\x00',  # Placeholder - needs to be updated with actual firmware version
+    ],
+    (Ecu.eps, 0x746, None): [
+      b'%\xc0\xd0\x12',  # Placeholder - needs to be updated with actual firmware version
+    ],
+    (Ecu.fwdCamera, 0x787, None): [
+      b'\x00\x00e\xb8\x00\x1f@ 4\x00',
+    ],
+    (Ecu.engine, 0x7a2, None): [
+      b'\xe5,\xa0Q\x07',  # Placeholder - needs to be updated with actual firmware version
+    ],
+    (Ecu.transmission, 0x7a3, None): [
+      b'\x04\xfe\xf4\x00\x00',  # Placeholder - needs to be updated with actual firmware version
     ],
   },
   CAR.SUBARU_LEGACY: {
