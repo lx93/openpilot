@@ -52,7 +52,7 @@ FW_VERSIONS = {
   },
   CAR.SUBARU_BRZ_2025: {
     (Ecu.abs, 0x7b0, None): [
-      b'\xa5 #\x04\x00',
+      b'\xa6 #\x08\x00',
     ],
     (Ecu.eps, 0x746, None): [
       b'%\xc0\xd0\x12',
@@ -62,6 +62,7 @@ FW_VERSIONS = {
     ],
     (Ecu.engine, 0x7a2, None): [
       b'\xe5,\xa0Q\x07',
+      b'\x07,pP\x07',
     ],
     (Ecu.transmission, 0x7a3, None): [
       b'\x04\xfe\xf4\x00\x00',
